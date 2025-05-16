@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Do Nails - GlamHive</title>
+    <link rel="stylesheet" type="text/css" href="Our Services.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span>GlamHive</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container-services">
+                    <i class="bi bi-search"></i>
+                    <input id="searchbar" onkeyup="search_service()" type="text" name="search" placeholder="Services..">
+                    <ul id="list">
+                        <li class="services">Hair Stylist</li>
+                        <li class="services">Nail Technician</li>
+                        <li class="services">Make Up</li>
+                        <li class="services">Barber</li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html"><i class="bi bi-door-open-fill"></i> Home</a>
+                      </li>
+                           
+                        <li class="nav-item">
+                            <a class="nav-link" href="About Us.html"><i class="bi bi-collection"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Our Services.html"><i class="bi bi-gear-wide-connected"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ContactUs.html"><i class="bi bi-telephone-plus"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="mt-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Explore Our Nails</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Hairstyle 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="long nails.jfif" class="card-img-top" alt="long nails">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Long Nails</h5>
+                        <p class="card-text">Price: R250</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                            <!-- Include Stripe.js -->
+                            <script src=" GlamHive.js"></script>
+
+<!-- Include Stripe.js -->
+<script src="C:\Users\N.Qandashe\Desktop\Glam Hive Creations\GlamHive.js"></script>
+
+<script>
+// Client-side code to handle the click event and redirect to Stripe Checkout
+document.getElementById('bookNowBtn').addEventListener('click', function() {
+    // Call your server to create a checkout session
+    fetch('/create-checkout-session', {
+        method: 'POST',
+    })
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(sessionId) {
+        // Redirect to Stripe Checkout page
+        var stripe = Stripe('your-publishable-key-here'); // Replace with your Stripe public key
+        stripe.redirectToCheckout({ sessionId: sessionId });
+    })
+    .catch(function(error) {
+        console.error('Error:', error);
+    });
+});
+</script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hairstyle 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="long nails1.jfif" class="card-img-top" alt="long nails1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Long Nails</h5>
+                        <p class="card-text">Price: R250</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hairstyle 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="long nails2.jfif" class="card-img-top" alt="long nails2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Long Nails</h5>
+                        <p class="card-text">Price: R280</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hairstyle 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="medium nails.jfif" class="card-img-top" alt="medium nails">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Medium Nails</h5>
+                        <p class="card-text">Price: R200</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hairstyle 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="medium nails1.jfif" class="card-img-top" alt="medium nails1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Medium Nails</h5>
+                        <p class="card-text">Price: R180</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hairstyle 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="medium nails4.jfif" class="card-img-top" alt="medium nails4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Medium Nails</h5>
+                        <p class="card-text">Price: R180</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="booking.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 GlamHive. All rights reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

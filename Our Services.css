@@ -1,0 +1,274 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body{
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand span {
+    color: #ff6f61;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #ff6f61;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}
+
+.nav-link.active {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.container-services {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+#searchbar {
+    padding: 0.5rem;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+#searchbar:focus {
+    border-color: #ff6f61;
+}
+
+.bi-search {
+    color: #888;
+}
+
+#list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.OurServices {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+.services:hover {
+    background-color: #ff6f61;
+    color: black;
+}
+
+h1 {
+    margin-top: 10px;
+   
+    margin-left:270px;
+    margin-right:270px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: left;
+  }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 20px;
+        text-align: center;
+
+
+    }
+   
+/* Section styling */
+section {
+    padding: 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h5 {
+    font-size: 1.1em;
+    color: #070505;
+    height: max-content;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #0a0303;
+    height: min-content;
+}
+ section a {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #0a0303;
+    height: min-content;
+    width: 100px;
+}
+image {
+    width: 50%;
+    border-radius: 100px;
+}
+
+  
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 20px;
+        padding: 0;
+
+    }
+
+    .product {
+        background: white;
+        padding: 20px;
+        width: 250px; /*Fixed width for each product*/
+        border-radius: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+        width: 70%;
+        
+    }
+
+    .product h3 {
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .product p {
+        color: #888;
+    }
+
+    .product button {
+        padding: 5px 10px;
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .product button:hover {
+        background-color: #e4573c;
+    }
+
+    .product button:focus {
+        outline: none;
+    }
+
+    .product button:active {
+        transform: translateY(1px);
+    }
+
+    .product .price {
+        font-weight: bold;
+        color: #ff6f61;
+        margin-top: 10px;
+    }
+
+    .product .discount {
+        text-decoration: line-through;
+        color: #888;
+    }
+
+    .product .rating {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .product .rating .bi-star-fill {
+        color: #ff6f61;
+    }
+
+    .product .rating .bi-star {
+        color: #888;
+    }
+
+    .product .rating span {
+        color: #333;
+    }
+
+    .product .rating .rating-count {
+        color: #888;
+    }
+
+    .product .rating .rating-count span {
+        color: #333;
+    }
+
+    .product .rating .rating-count .bi-heart-fill {
+        color: #ff6f61;
+    }
+
+    footer {
+        background-color: #A8A8A8;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    
+
+
+
+   

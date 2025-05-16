@@ -1,0 +1,792 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.search-section {
+    background-color: #A8A8A8;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Styling for the search form */
+  .search-form {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    margin-top: 5px;
+    justify-content: center;
+  }
+  
+  /* Styling for the search input */
+  .search-form input[type="search"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* Width of the search input */
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Styling for the search icon */
+  .search-form i.fa-search {
+    position: absolute;
+    right: 10px; /* Aligns the icon to the right inside the input field */
+    top: 50%;
+    font-size: 20px;
+    color: #333; /* You can change the color to fit your design */
+  }
+  
+  /* Styling for the suggestions dropdown */
+  .suggestions-box {
+    position: absolute;
+    top: 45px;  /* Slight adjustment for better alignment */
+    left: 0;
+    width: 100%;
+    background-color: rgb(173, 90, 90);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;  /* Ensure it's above other content */
+  }
+  
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+
+
+
+
+
+
+
+
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand span {
+    color: #ff6f61;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #ff6f61;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}
+
+.nav-link.active {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+
+
+header {
+    background-color: #A8A8A8;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: justify;
+}
+
+ h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 4.5em;
+    color: #5D5D5D;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.container p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+hr{
+    border: 1px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*Login styling*/
+
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(8px);  /* Adds a see-through effect */
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.7);  /* Transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    padding-bottom: 10px;
+  }
+  
+  .login-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field {
+    padding: 10px 10px 10px 35px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .input-field:focus + .icon-container {
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .login-btn {
+    background-color: #1863f0;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #45a049;
+  }
+
+/*Password Reset Page*/
+#password-reset{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#5D5D5D;
+    font-size: 1.0em;
+
+}
+
+.form-control{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+ form p{
+    text-align:center;
+    font-size: 1.0em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#5D5D5D;
+}
+
+form button{
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+/* Section styling */
+section {
+    padding: 40px;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #5D5D5D;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4D4D4D;
+    text-align: justify;
+}
+
+
+
+/*Photo Gallery*/
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(50%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+
+
+/* Button styling */
+.btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e96053;
+}
+
+.btn.register {
+    background-color: #ff6f61;
+}
+
+.btn register:hover {
+    background-color: #e96053;
+}
+
+
+/* About styling */
+.about {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #5D5D5D;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4D4D4D;
+    text-align: justify;
+}
+
+.about img {
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Services styling */
+.services {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #5D5D5D;
+}
+
+.services p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4D4D4D;
+    text-align: justify;
+}
+
+.services img {
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Contact styling */
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #5D5D5D;
+}
+
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4D4D4D;
+    text-align: justify;
+}
+
+.contact img {
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #A8A8A8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.col-md-6{
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+.col-md-6 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-weight: bold;
+    margin-left:30px;
+   text-align: justify;
+}
+
+.col-md-6 h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 1.2;
+    text-align: center;
+}
+
+.col-md-6 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.col-md-6 a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+.col-md-6 a:hover{
+    color: rgb(167, 16, 129);
+}
+
+.col-md-6 img{
+    border-radius: 10px;
+}
+
+.col-md-4 h2{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.col-md-4{
+ font-size: 60%;
+}
+
+button{
+    background-color: #A8A8A8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: #A8A8A8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(167, 16, 129);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-services {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    #searchbar {
+        width: 100%;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    .col-md-6{
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .col-md-6 h1{
+        font-size: 30px;
+    }
+
+    .col-md-6 h3{
+        font-size: 15px;
+    }
+
+    .col-md-6 p{
+        font-size: 15px;
+    }
+
+    .col-md-6 a{
+        font-size: 15px;
+    }
+
+    .col-md-4 h2{
+        font-size: 20px;
+    }
+
+    .col-md-4{
+        font-size: 50%;
+    }
+
+    button{
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .container-services {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #searchbar {
+        width: 100%;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    .col-md-6{
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .col-md-6 h1{
+        font-size: 30px;
+    }
+
+    .col-md-6 h3{
+        font-size: 15px;
+    }
+
+    .col-md-6 p{
+        font-size: 15px;
+    }
+
+    .col-md-6 a{
+        font-size: 15px;
+    }
+
+    .col-md-4 h2{
+        font-size: 20px;
+    }
+
+    .col-md-4{
+        font-size: 50%;
+    }
+
+    button{
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .book now{
+        display: inline;
+        margin: 0;
+    }
+
+    footer{
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button:hover{
+    background-color: rgb(167, 16, 129);
+    color: white;
+}
+
+form input:hover{
+    border: 1px solid rgb(167, 16, 129);
+}
+
+form textarea{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+}
+
+form textarea:hover{
+    border: 1px solid rgb(167, 16, 129);
+}
+
+form select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form select:hover{
+    border: 1px solid rgb(167, 16, 129);
+}
+
+form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form h4{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form a{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form a:hover{
+    color: rgb(167, 16, 129);
+}
+
+form img{
+    border-radius: 10px;
+}
+
+form button{
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+form button:hover{
+    background-color: rgb(167, 16, 129);
+    color: white;
+}
+
+.register{
+    width:100%;
+    background-image: url(flora.jpg);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+
